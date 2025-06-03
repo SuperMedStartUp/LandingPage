@@ -39,7 +39,7 @@ section{
 /***UTILITIES CLASSES ***/
 .heading {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     color: var(--black);
     text-transform: uppercase;
     font-weight: bolder;
@@ -63,12 +63,12 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 2rem 6%;
     z-index: 1000;
 }
 
 .header .logo{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bolder;
     text-transform: uppercase;
     border-bottom: 1px solid var(--white);
@@ -81,26 +81,30 @@ section{
 }
 
 #language-toggle {
-    margin-left: auto; 
-    padding: 0.5em 1em;
+    padding: 0.2em 1em;
     background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,77,121,1) 0%, rgba(98,228,254,1) 98%); 
     color: #fff;
     border-radius: 5px;
     text-decoration: none; 
 }
 
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
 
 .header .navbar a{
     font-size: 1.7rem;
     margin: 0 1.8rem;
     text-transform: uppercase;
     color: var(--white);
+    align-items: center;
 }
 
 .header .navbar a:hover {
     color: var(--primary);
-    border-bottom: 0.3rem solid var(--primary);
-    padding-bottom: .5rem;
+    border-bottom: 0.2rem solid var(--primary);
+    padding-bottom: 0.2rem;
 }
 
 #menu-btn{
@@ -495,7 +499,7 @@ section{
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(23rem, 1fr));
-    grid-area: 1.5rem;
+    grid-area: 1.5 rem;
     margin-top: 13rem;
 }
 
@@ -527,7 +531,7 @@ section{
     margin-top: 2rem;
     padding-top: 2rem;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 1rem;
 }
 
 @media(max-width:804px){
@@ -556,6 +560,7 @@ section{
         display: initial;
     }
     .header .navbar {
+        display: block;
         position: absolute;
         top: 115%;
         right: 2rem;
